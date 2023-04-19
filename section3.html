@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 3</title>
+</head>
+<body>
+    <!-- 1. Display two input boxes where users can input numbers -->
+    <input type="text" oninput="outPut()" id="in1">
+    <input type="text" oninput="outPut()" id="in2">
+    <!-- 2. Display an output with the sum of the two input values -->
+    <div id="output"></div>
+
+    <script>
+        /* 2. Display an output with the sum of the two input values */
+        function outPut(){
+            var input1 = document.getElementById("in1");
+            var input2 = document.getElementById("in2");
+            var sum = parseInt(input1.value) + parseInt(input2.value); 
+            document.getElementById("output").innerHTML = sum;
+        }
+    </script>
+</body>
+</html>

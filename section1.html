@@ -21,6 +21,7 @@
     <script>
         /* 6. The function will also update the paragraph element to display if the phone number is valid or not */
         function checkNumber(){
+            event.preventDefault();
             var myTel = document.getElementById("myTel");
             var myPara = document.querySelector("p");
             if(myTel.value == myTel.pattern){

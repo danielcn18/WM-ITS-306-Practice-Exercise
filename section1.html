@@ -16,7 +16,7 @@
     <!-- 4. When the user submits a number it runs checkNumber() -->
     <input type="submit" onclick="checkNumber()">
     <!-- 5. The function must checked if input phone number fits the pattern 111-444-7777 -->
-    <input type="tel" required pattern="\1{3}-\4{3}-\7{4}" id="myTel">
+    <input type="tel" required pattern="^\1{3}-\4{3}-\7{4}$" id="myTel">
 
     <script>
         /* 6. The function will also update the paragraph element to display if the phone number is valid or not */
